@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scout 项目筛选台</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Scout 项目筛选台</h1>
+      <div class="sub">奇绩创坛 Campus Scout · 访谈记录 → 两层筛选 → 人工确认推荐</div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="pool">项目池</button>
+    <button class="tab" role="tab" data-tab="review">复盘</button>
+    <button class="tab" role="tab" data-tab="template">访谈模板</button>
+    <button class="tab" role="tab" data-tab="data">导出 / 导入</button>
+  </nav>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <section id="v-pool">
+    <div class="pool">
+      <div>
+        <div class="filters" id="filters"></div>
+        <div class="list" id="list"></div>
+        <button class="add" id="add">+ 新建访谈记录</button>
+      </div>
+      <div id="detail"></div>
+    </div>
+  </section>
+  <section id="v-review" hidden></section>
+  <section id="v-template" hidden></section>
+  <section id="v-data" hidden></section>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
